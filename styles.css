@@ -1,0 +1,150 @@
+.box1{
+height: 200px;
+width: 200px;
+background-color: aqua;
+font-size: 10px;
+background-image: url("./img/light.jpg");
+background-size: cover;
+border-radius: 10px;
+
+
+}
+.box2{
+    height: 50px;
+    width: 4rem;/*html body tag ko hisab le set garxa
+                      width:5rem ; (means 5 times of body's font-size)*/
+    
+    background-color: blanchedalmond;
+    font-size: 0.70em; /* it means double of parent ie. 20px of parent (2*10px)*/
+    font-weight: 900;
+    margin: 10px;
+    color: rgb(4, 105, 46);
+    position: relative;
+    top: 50px;
+    display: inline-block;
+    background-image: url("./img/box.jpeg");
+    background-size: cover;
+   border-radius: 5px;
+   border: 2px double red;
+}
+
+.light-box{
+    position: relative;
+    left: 20px;
+}
+
+.div-box{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    margin-top: 10px;
+
+}
+.box3{
+    position: static;
+    background-image: url("./img/nature.jpeg");
+    background-size: cover;
+    color: white;
+}
+.box4{
+    /* position: relative;
+    top:20px;
+    left: 20px; */
+    background-image: url("./img/view.jpeg");
+    background-size: cover;
+    color: white;
+}
+.box5{
+    /* position: fixed; */
+    position: absolute;
+    top: 180px;
+    left: 215px;
+}
+.flex-container{
+    width: 80%;
+    height: 100px;
+    border: 2px dotted;
+    display: flex;
+    flex-direction: row;
+    
+}
+.flex-prop{
+height: 50px;
+width: 300px;
+border: 2px solid;
+justify-content: center;  /*main axis ko respect ma hunxa*/
+align-items: flex-start;
+
+}
+.box10{
+    
+    background-color: aqua;
+   /* align-self: flex-end;*/ /*it work for cross-axis*/
+    height: 50px;
+    width: 50px;
+    background-image: url("./img/night-beauty.jpeg");
+    background-size: cover;
+}
+.box7{
+    background-color: blue;
+    /* flex-shrink: 7; */
+  flex-grow:1 ;
+}
+.box8{
+    background-color: blueviolet;
+    flex-grow: 2;
+
+}
+.box9{
+    background-color: brown;
+    height: 50px;
+    width: 50px;
+ 
+}
+nav{
+    margin-top: 30px;
+    padding-top: 10px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    height: 25px;
+    width: 80%;
+    background-color: rgb(20, 3, 3);
+}
+.nav-prop{
+    text-decoration:  none;/* all items of nav become inline element*/
+    color: white;
+    font-weight: bold;
+    list-style-type:none /* it make list-decoration none */
+}
+
+.logo{
+color: yellow;
+}
+.home{
+
+}
+.about-us{
+ 
+}
+.help{
+
+}
+#search{
+
+}
+.div1{
+    height: 300px;
+    width: 300px;
+    display: flex;   /**/
+    justify-content: center; /*horizontally align*/
+    align-items: center;     /* vertically align*/
+    background-color: rgb(76, 122, 122);
+    color: rgb(214, 162, 65);
+}
+.div2{
+   height: 100px;
+   width: 100px;
+   /* align-self: center; it align to  cross axis of its parent */
+    background-color: rgb(108, 196, 196);
+}

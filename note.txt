@@ -1,0 +1,314 @@
+text -align: center;
+color,-->text ko color set garxa
+selector
+element selector
+universal selector
+id-selector
+class selector
+
+
+<div id="box">
+lorem lorem
+</div>
+
+<style>
+#box{
+bg-color:blue;
+
+}
+</style>
+<h1 class="heading></h1>
+<h2 class="heading></h2>
+<h3 class="heading></h3>
+<button style={bg-color:pink;}>button</button>
+<style>
+.heading{
+color:red
+}
+button{
+bg-color:pink;
+}
+
+
+</style>
+
+text align:left/right /center/start/end
+in hindi
+left=start
+right=end
+in urdu
+left=end
+right=start
+
+text-decoration :red dotted underline; //search and explore in mdn
+mdn text decoration //yesari search garxam
+
+font-weight:bold/bolder/normal/lighter
+fontweight:100-900
+lightest
+100
+darkest
+900
+bold(400)
+
+
+font-family
+ariel / roboto
+
+5 generic font families
+serif
+sanserif
+cursive
+ 
+teti dheraii not importaant
+
+
+(px) 
+Absolute unit and relative unit
+absolute unit
+pixel (px)
+96px = 1inch =2.54cm
+font-size:2px;
+
+we can go to insect and check default font size and  we can calculate and estimate the value of that character
+
+line-height property
+it can decide the text height kati hunxa vanera
+line-height :2px;
+space between two line 20px is okay
+line-height:normal;
+
+text-transform:capitalize/uppercase/lowercase/none
+
+1.55.36
+
+level1 completion
+
+now we are reading about box model
+height
+width 
+border
+margin 
+padding
+
+height is content ko height height ko changes inspect garera dekhinxa
+width is content ko horizontal area
+border is line
+
+border-width:2px;
+border-style:solid/dotted/dashed;
+border-color:black;
+
+shorthand
+border:2px solid black;
+
+
+text align center le k garxa vane hamro jati pani height and width align xa ni tesko center ma purau ne kam garxa
+Border-radius:10px/50%;
+padding: top right bottom left
+
+margin: top right bottom left
+
+******** IMP NOTE *********
+div vitra div add garda content next line ma janxa
+because div is block element .
+
+Display property
+inline --> Takes only the space required by the element.
+block  -->Takes full space available in width.
+inline-block --> similar to inline but we can set margin and padding
+none --> To remove element from document flow.
+
+
+we have two type of element in html one is block 
+and another is inline
+
+block element --> div,h1
+inline element -->span ,, button ,, input ,, anchor tag
+we can change its property by display propert y
+
+
+***                       ***
+******** Important note******
+block element laii puraii width chyenxa
+inline element laii puraii width chayedaina
+
+
+display:inline;  -->it give require space by element 
+but it have zero top margin by default
+so in order to tackle this we use 
+******* Important note ********
+display:inline-block; -->we can set margin ,, padding ,,
+width and height as needed
+but we cannot set margin ,, padding ,, width and height
+in case of "inline"
+
+we can hide the element by doing display :none;
+
+we have anothe thing called visibility:hidden;
+it is completly disapear
+
+difference betn disply none and visbility hidden
+1.space is reserved for visibility hidden
+2.no space is reserved for display;none 
+
+Alpha channel
+RGBA(255,255,255,0-1)
+A is alpha channel which define opacity
+
+0-1 value lies in opacity
+
+level-3
+
+30% it means parent ko comparison ma kati pixel hunxa vanne kura
+
+em means relative to font-size of parent
+
+<div box1> box1 is 100px
+
+
+<div box2> box2 is 1em it become 100px
+        
+</div>
+
+</div>
+
+
+
+******** Important note ***********
+font-size yesto property ho jasko "em" parent sanga dependend hunxa but
+----> width ko case ma 5em means (2*parent font-size) *****
+not always child width is depend on parent font-size. sometime it depend on afnaii font-size
+VVVVVVVVVVIMP
+
+(Root Em) Rem
+html body tag ko hisab le set garxa
+width:5rem ;
+(means 5 times of body's font-size)
+
+vh:relative 1% of viewport height
+vw: ''   "          "      width
+
+screen height ko hisab le set garxa screen height 
+100vh means total height as of screen
+
+position:static/relative/absolute/fixed
+
+by default all element position are static
+******************
+position:relative;
+relative ma hamile (top,right,bottom,left and z-index will work)
+
+absolute
+position: absolute; 
+jati pani parent xa tesko hisab le shift garxa
+closest non-static ancestor bata shift garxa
+
+fixed
+position: fixed;
+fixed ko case ma position (always) relative to browser
+position always fixed in position fixed
+
+
+********Interesting kura**********
+Z index
+"overlapping" ma ko mathi auni ko backside ma basni vanne kura
+
+auto z-index is 0
+z ko value jati dheraii positive vayo teti naii dheraii priority badxa
+then it can come in top in overlapping
+z ko value jati dheraii negative vayo teti naii priority ghatxa
+
+z-index:1/2/.....
+z-index:-1/-2/....
+
+overlapping element ma kun xaii le cover garxa
+
+unsplash
+
+background-image=url("")
+background-size is also important with background-image
+
+background-size:cover/contain/auto
+
+By default background-size auto hunxa
+
+
+flex-box
+It is a one-dimensional layout method for arranging items in rows or columns
+
+before learning flex-box we have to understand "flex model"
+flex-container
+
+
+*******************IMP NOTE ***********************
+main-axis --> horizontal axis
+cross-axis --> vertical axis
+
+we can also change cross and main axis to 
+
+cross-axis --> horizontal axis
+main-axis --> vertical axis
+
+flex-direction:row/row-reverse/column/column-reverse
+
+by default flex-direction is row.
+
+row-reverse ma right to left items haru align hunxa
+
+flex-item tries to fit in content 
+it doesnt care about height and width
+***********
+justify-content ---> it decide alignment along main axis
+center/flex-start/flex-end/space-between/space-evenly
+**
+align-content --> align space between element
+********************
+align-content : center
+ all element tries to come in center.
+align-content : center/flex-start/flex-end
+*************************************IMP NOTE********************
+align-self le particular element laii matraii change garauxa
+in """cross-axis"""" <------ important kuro
+align-self:center/flex-end/flex-start 
+
+flex-grow and flex-shrink
+normally element are shrink by 1
+*******************
+list-style-type:none it make list-decoration none
+*****
+align-item and align-self both are for cross-axis
+but align-self has more priority beacuse it work for individual
+
+
+Media Queries
+
+@media(width:600px){
+
+
+}
+@media
+(min-width: 600px )
+(max-width: 1000px)
+Actually we are writing media queries with width
+
+@media(min-width:200px)and(max-width:300px){
+
+
+}
+
+****************
+
+Level-5
+
+transition //transformation and rotation
+
+Transitions
+
+Transitions enable you to define the trnsition between two states of an element
+transition-property:property you want to transition (font-size,width etc)
+
+transition-property
+transition-duration:2s/4ms...
+transition-timing-function:ease-in/ease-out/linear/steps ..
+transition-delay:2s/4ms ..
