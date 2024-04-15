@@ -1,0 +1,111 @@
+h1{
+    text-align: center;
+}
+.firstdiv{
+    height: 150px;
+    width: 300px;
+    background-color: aqua;
+    color: red;
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    border: 2px dotted black;
+    transition: all 3s ease-in-out ;
+
+}
+.firstdiv:hover{
+    background-color: green;
+    color: antiquewhite;
+ transform: scale(1.5);
+}
+.rotate{
+    background-color: aqua;
+    position: absolute;
+    top: 100px;
+    left: 800px;
+    transition: all 3s ease-in-out;
+    
+}
+.rotate:hover{
+   
+    transform: rotate(180deg);
+}
+.rotatex{
+    background-color: aqua;
+    position: absolute;
+    top: 100px;
+    left: 1200px;
+    transition: all 3s ease-in-out;
+}
+.rotatex:hover{
+   transform:scale(2,1) ;
+}
+.translatex{
+    background-color: aqua;
+    position: absolute;
+    top: 400px;
+    left: 400px;
+    transition: all 1s ease-in-out;
+}
+.translatex:hover{
+    transform: translateX(80px);
+    p{
+        font-size: 1.2em;
+        color: blue;
+    }
+}
+.skew {
+    background-color: aqua;
+    position: absolute;
+    top: 400px;
+    left: 800px;
+    transition: all 1s ease-in-out;
+}
+.skew:hover{
+    transform: skew(45deg);
+}
+.rotatediv{
+    text-align: center;
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 400px;
+    left: 1200px;
+    border-radius: 50%;
+
+    border:20px solid #FFFAB7;
+    border-top: 20px solid #AFD198;
+
+    animation: myName 1s linear 0s infinite normal}
+@keyframes myName{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    /* 0%{
+        border:20px solid #FFFAB7;
+        border-top: 20px solid #AFD198;
+       
+        
+    }
+    33%{
+        border:20px solid #FFFAB7;
+        border-right: 20px solid #AFD198;
+  
+    }
+    66%{
+        border:20px solid #FFFAB7;
+        border-bottom: 20px solid #AFD198;
+     
+    }
+    100%{
+        border:20px solid #FFFAB7;
+        border-left: 20px solid #AFD198;
+   
+    } */
+}
+.rotatediv:hover{
+    transform: rotate(360deg);
+}

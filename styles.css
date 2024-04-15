@@ -15,7 +15,7 @@ border-radius: 10px;
                       width:5rem ; (means 5 times of body's font-size)*/
     
     background-color: blanchedalmond;
-    font-size: 0.70em; /* it means double of parent ie. 20px of parent (2*10px)*/
+    font-size: 0.70em; /* it means 0.7 times of parent ie. 20px of parent (0.7*10px)*/
     font-weight: 900;
     margin: 10px;
     color: rgb(4, 105, 46);

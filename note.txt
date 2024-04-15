@@ -198,16 +198,23 @@ by default all element position are static
 ******************
 position:relative;
 relative ma hamile (top,right,bottom,left and z-index will work)
+****afnaii original position bata shift*****
+
 
 absolute
 position: absolute; 
 jati pani parent xa tesko hisab le shift garxa
 closest non-static ancestor bata shift garxa
+nonstatic vaneko static hunu vayena tyo vanda bahek
+
 
 fixed
 position: fixed;
-fixed ko case ma position (always) relative to browser
+*** fixed ko case ma position (always) relative to browser ***
 position always fixed in position fixed
+
+
+Document flow ko kura k ho
 
 
 ********Interesting kura**********
@@ -312,3 +319,13 @@ transition-property
 transition-duration:2s/4ms...
 transition-timing-function:ease-in/ease-out/linear/steps ..
 transition-delay:2s/4ms ..
+
+
+*****div:hover{} *****
+yo hover ma apply garna milxa
+transition-property:all;/** yesle transtion property sappai ma
+                                              set garxa
+transition-duration:2s
+transition-timing-function:steps(5) *** steps le 5 steps ma transition garxa ***
+we have ease-in/linear......
+ease-in ma bistaraii bistaraii transition hunxa
