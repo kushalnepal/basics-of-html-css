@@ -61,6 +61,7 @@ button{
 .container{
     height: 40px;
     border: 4px dotted orange;
+    width: 95%;
   
     display: flex;
     justify-content: space-evenly;
